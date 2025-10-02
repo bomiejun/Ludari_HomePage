@@ -1,0 +1,35 @@
+.navbar-title {
+    font-size: 1.3rem;
+    color: white;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.5rem;
+    background-color: #222;
+    color: white;
+  }
+  
+  .navbar .nav-buttons {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  /* Make buttons look like text links */
+  .navbar .nav-buttons button {
+    background: none;       /* remove background */
+    border: none;           /* remove border */
+    color: white;           /* text color matches navbar */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 0;             /* remove button padding */
+  }
+  
+  /* Hover effect: subtle highlight */
+  .navbar .nav-buttons button:hover {
+    color: #4cafef;         /* or any accent color you like */
+  }
+  
