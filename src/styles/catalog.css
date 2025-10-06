@@ -1,0 +1,81 @@
+:root{
+  --bg:#FFF8E7;
+  --card:#ffffff;
+  --text:#23303a;
+  --muted:#667986;
+  --ring: rgba(0,0,0,0.06);
+  --shadow: 0 8px 24px rgba(0,0,0,0.08);
+  --radius:16px;
+
+  --accent:#1a73e8;        /* link/chip color */
+  --chip-bg:#eaf2ff;
+}
+
+html,body{ background:var(--bg); color:var(--text); }
+*{ box-sizing:border-box; }
+
+.layout-wide{
+  /* Wider center column (banner feel), but not full-width */
+  max-width: 1000px;         /* wider than before */
+  margin: 0 auto;
+  padding: 0px 20px 72px;
+}
+
+.catalog__header{ text-align: left; margin-bottom: 18px; }
+.catalog__title{ font-size: 32px; font-weight: 800; margin: 0 0 6px; }
+.catalog__subtitle{ color: var(--muted); margin: 0; }
+
+.catalog__section{ margin-top: 10px; }
+.section-heading{
+  font-size: 32px;
+  font-weight: 800;
+  margin: 30px 0 12px;
+}
+
+/* Stack of wide “banners” */
+.stack{ display: grid; gap: 16px; }
+
+/* Card: wide, with image on left, text on right */
+.card{
+  display: flex;
+  gap: 23px;
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--ring);
+  padding-right: 40px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 18px;
+}
+
+/* Bigger thumbnail so the card feels like a banner */
+.card__thumb{
+  /* width: 90px; */
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex: 0 0 auto;
+}
+
+.card__body{ display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.card__title{ margin: 0; font-size: 24px; font-weight: 800; }
+.card__meta{ font-size: 13px; color: var(--muted); }
+.card__summary{ margin: 0; color: var(--muted); line-height: 1.5; }
+
+.card__links{ display: flex; gap: 8px; margin-top: 6px; }
+.chip{
+  display: inline-flex; align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 700; font-size: 12px;
+  text-decoration: none;
+  color: var(--accent);
+  background: var(--chip-bg);
+}
+.chip:hover{ filter: brightness(0.97); }
+
+@media (max-width: 800px){
+  .card{ flex-direction: column; }
+  .card__thumb{ width: 100%; height: 180px; }
+}

@@ -1,35 +1,47 @@
-.navbar-title {
-    font-size: 1.3rem;
-    color: white;
-  }
-
+/* Full-width bar */
 .navbar {
+    width: 100%;
+    background-color: #9A3F3F; /* pick your brand color */
+    padding: 1rem 0;           /* vertical padding */
+  }
+  
+  /* Content container */
+  .navbar > div {
+    max-width: 1000px;         /* limit content width */
+    margin: 0 auto;            /* center horizontally */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2.5rem;
-    background-color: #222;
+    padding: 0 1.5rem;         /* horizontal breathing room */
+  }
+  
+  /* Title styling */
+  .navbar-title {
+    font-size: 1.25rem;
+    font-weight: bold;
     color: white;
   }
   
-  .navbar .nav-buttons {
+  /* Nav buttons container */
+  .nav-buttons {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;                 /* spacing between links */
   }
   
-  /* Make buttons look like text links */
-  .navbar .nav-buttons button {
-    background: none;       /* remove background */
-    border: none;           /* remove border */
-    color: white;           /* text color matches navbar */
-    font-size: 1rem;
-    cursor: pointer;
-    transition: color 0.2s;
-    padding: 0;             /* remove button padding */
+  /* Links styled like buttons */
+  .nav-buttons a {
+    padding: 0.5rem 0.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: #9A3F3F;
+    color: white;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.1s ease;
   }
   
-  /* Hover effect: subtle highlight */
-  .navbar .nav-buttons button:hover {
-    color: #4cafef;         /* or any accent color you like */
+  .nav-buttons a:hover {
+    background-color: #9A3F3F;
+    transform: translateY(-2px);
   }
   
+

@@ -1,16 +1,20 @@
 import React from "react";
-import "../styles/Navbar.css"; // optional, for styling
+import { Link } from "react-router-dom";
+import "../styles/NavBar.css";
 
-export default function Navbar() {
+export default function NavBar() {
   return (
     <nav className="navbar">
-      <div className="navbar-title">Ludari Minigames</div>
-      <div className="nav-buttons">
-        <button onClick={() => alert("Go to Home section!")}>Home</button>
-        <button onClick={() => alert("Go to Games section!")}>Games</button>
-        <button onClick={() => alert("Go to About section!")}>About</button>
-        <button onClick={() => alert("Go to Contact section!")}>Contact</button>
+      <div>
+        <div className="navbar-title">Ludari Minigames</div>
+        <div className="nav-buttons">
+          <Link to="/">Home</Link>
+          <Link to="/games">Games</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+        </div>
       </div>
     </nav>
+
   );
 }

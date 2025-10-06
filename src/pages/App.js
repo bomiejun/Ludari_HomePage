@@ -1,23 +1,26 @@
 import React from "react";
-import Navbar from "./components/NavBar";
-import "./index.css";
+import NavBar from "../components/Navbar.js";
+import "../index.css";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function App() {
+  const navigate = useNavigate();
   return (
     <div>
       {/* Navbar */}
-      <Navbar />
+      <NavBar />
 
       {/* Hero Section */}
       <header className="hero">
-        <h2>Present your app in a whole new way</h2>
+        <h2>Because learning should be fun</h2>
         <p>
           A collection of fun, accessible minigames designed to support young
           learners while keeping play at the center.
         </p>
         <div className="buttons">
-          <button className="btn primary">Get Started</button>
-          <button className="btn secondary">Learn More</button>
+          <button className="primary btn">Get Started</button>
+          <button onClick={() => navigate("/games")} className="btn secondary">Learn More</button>
         </div>
       </header>
 
@@ -35,13 +38,13 @@ function App() {
           <p>
             Each game is designed with skills in mind—memory, reading, and more.
           </p>
-          <a href="#">Learn more →</a>
+          <Link to="/games"> Learn more → </Link>
         </div>
         <div className="feature-card">
           <div className="icon">🌟</div>
           <h3>Kid-Friendly</h3>
           <p>Colorful, simple, and safe designs made for younger players.</p>
-          <a href="#">Explore →</a>
+          <Link to="/games"> Explore → </Link>
         </div>
       </section>
     </div>
