@@ -6,7 +6,7 @@ import App from "./pages/App";                  // home page
 import MinigamesCatalog from "./pages/MinigameCatalog"; // games page
 import About from "./pages/About";
 import Contact from "./pages/Contacts";
-import Navbar from "components/Navbar.js";
+import Navbar from "src/components/Navbar.js";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
