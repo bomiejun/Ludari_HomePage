@@ -1,11 +1,11 @@
 import React from "react";
-import NavBar from "../components/Navbar.js";
+import Navbar from "../components/Navbar.js";
 import "../styles/contact.css";
 
 export default function Contact() {
   return (
     <div>
-      <NavBar />
+      <Navbar />
       <section className="contact">
       <div className="contact__container">
         <h1>Contact Us</h1>

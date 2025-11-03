@@ -1,7 +1,7 @@
 import React from "react";
 import games from "../data/games";
 import "../styles/catalog.css";
-import NavBar from "../components/Navbar.js";
+import Navbar from "../components/Navbar.js";
 
 function GameCard({ game }) {
   return (
@@ -34,7 +34,7 @@ export default function MinigamesCatalog() {
 
   return (
      <div>
-        <NavBar />
+        <Navbar />
         <main className="layout-wide">
        
        {/* <header className="catalog__header">

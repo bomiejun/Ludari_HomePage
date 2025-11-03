@@ -1,12 +1,12 @@
 import React from "react";
 import "../styles/about.css";
 import ludariImage from "../assets/Ludari_Image.PNG";
-import NavBar from "../components/Navbar.js";
+import Navbar from "../components/Navbar.js";
 
 export default function About() {
   return (
     <div>
-         <NavBar />
+         <Navbar />
          <section className="about">
       <div className="about__container">
         {/* Hero Title */}
