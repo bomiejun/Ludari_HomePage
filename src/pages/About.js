@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/about.css";
 import ludariImage from "../assets/Ludari_Image.PNG";
-import Navbar from "../components/Navbar.js";
+import Navbar from "/Users/bomiejun/Ludari_HomePage/Ludari_HomePage/src/components/Navbar.js";
 
 export default function About() {
   return (

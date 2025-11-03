@@ -1,7 +1,7 @@
 import React from "react";
 import games from "../data/games";
 import "../styles/catalog.css";
-import Navbar from "../components/Navbar.js";
+import Navbar from "/Users/bomiejun/Ludari_HomePage/Ludari_HomePage/src/components/Navbar.js";
 
 function GameCard({ game }) {
   return (
